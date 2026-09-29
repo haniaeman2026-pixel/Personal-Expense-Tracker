@@ -1,262 +1,258 @@
-<div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=700&size=42&duration=3000&pause=1000&color=5A4032&center=true&vCenter=true&width=850&height=80&lines=Personal+Expense+Tracker;Smart+%7C+Simple+%7C+Organized+Finances" alt="Personal Expense Tracker" />
+
+
+::: {align="center"}
+
+✦ Personal Expense Tracker
+Smart • Simple • Organized Finances
+<p>
+<img src="https://img.shields.io/badge/Finance-Expense%20Management-5A4032?style=for-the-badge" alt="Finance"/>{=html}
+<img src="https://img.shields.io/badge/Firebase-Firestore-C8A27A?style=for-the-badge&logo=firebase&logoColor=white" alt="Firebase"/>{=html}
+<img src="https://img.shields.io/badge/FastAPI-Backend-7A5C45?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI"/>{=html}
+<img src="https://img.shields.io/badge/JavaScript-ES6+-6B4F3A?style=for-the-badge&logo=javascript&logoColor=white" alt="JavaScript"/>{=html}
+
+</p>
+<br>{=html}
 
 <p>
-  <img src="https://img.shields.io/badge/Finance-Expense%20Management-5A4032?style=for-the-badge" alt="Finance"/>
-  <img src="https://img.shields.io/badge/Firebase-Firestore-C8A27A?style=for-the-badge&logo=firebase&logoColor=white" alt="Firebase"/>
-  <img src="https://img.shields.io/badge/FastAPI-Backend-7A5C45?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI"/>
-  <img src="https://img.shields.io/badge/JavaScript-ES6+-6B4F3A?style=for-the-badge&logo=javascript&logoColor=white" alt="JavaScript"/>
-</p>
-
-<br>
-
-<img src="https://readme-typing-svg.demolab.com?font=DM+Sans&weight=600&size=20&duration=3500&pause=800&color=7A5C45&center=true&vCenter=true&width=700&height=45&lines=Track+your+spending.;Understand+your+money.;Build+better+financial+habits." alt="Project tagline"/>
-
-<br><br>
-
-<p>
-  <a href="YOUR_LIVE_DEMO_URL" target="_blank">
-    <img src="https://img.shields.io/badge/🚀%20LIVE%20DEMO-Open%20Application-5A4032?style=for-the-badge" alt="Live Demo"/>
-  </a>
-</p>
-
-<br>
-
-<img src="https://readme-typing-svg.demolab.com?font=DM+Sans&weight=600&size=21&duration=3000&pause=900&color=7A5C45&center=true&vCenter=true&width=520&height=45&lines=Developed+by+Hania+Eman" alt="Developed by Hania Eman"/>
-
-</div>
-
----
-
-## ✦ About The Project
-
-**Personal Expense Tracker** is a modern, responsive web application designed to help users record, organize, search, and manage their daily expenses through a clean and intuitive dashboard.
-
-The application combines a **premium finance-inspired UI/UX** with **Firebase Cloud Firestore** for real-time data storage and synchronization.
-
-It also includes a lightweight **FastAPI backend** for application serving and backend API functionality.
-
-The project focuses on:
-
-- Clean and intuitive user experience
-- Real-time expense management
-- Responsive dashboard design
-- Search and filtering
-- Automatic financial calculations
-- Firebase Firestore integration
-- FastAPI backend structure
-- Professional and maintainable code organization
-- Deployment readiness
-
----
-
-# ✦ Live Demo
-
-Experience the complete **Personal Expense Tracker** directly in your browser.
-
-<p align="center">
-
-<a href="YOUR_LIVE_DEMO_URL" target="_blank">
-  <img src="https://img.shields.io/badge/🚀%20OPEN%20LIVE%20APPLICATION-5A4032?style=for-the-badge&logo=vercel&logoColor=white" alt="Open Live Application"/>
-</a>
+<a href="YOUR_LIVE_DEMO_URL" target="_blank">{=html}
+<img src="https://img.shields.io/badge/🚀%20LIVE%20DEMO-Open%20Application-5A4032?style=for-the-badge" alt="Live Demo"/>{=html}
+</a>{=html}
 
 </p>
+<br>{=html}
 
-### What You Can Try
+A modern, responsive expense management dashboard built with HTML,
+CSS, JavaScript, Firebase Firestore, and FastAPI.
 
-The deployed application allows you to interact with the actual working UI:
+<br>{=html}
 
-- ➕ Add a new expense
-- ✏️ Edit an existing expense
-- 🗑️ Delete an expense
-- 🔎 Search expenses
-- 🏷️ Filter expenses by category
-- 📊 View total number of expenses
-- 💰 View total amount spent
-- 📅 View current-month spending
-- 📈 View average daily spending
-- 🔥 View real-time Firebase connection status
+Developed by Hania Eman
+:::
 
-> **Live Demo:** The button above opens the deployed application itself, allowing you to interact with and test the working expense tracker.
+✦ Overview
+Personal Expense Tracker is a modern web application for recording,
+organizing, searching, and managing everyday expenses from one clean
+dashboard.
 
----
+The application combines a polished finance-focused interface with
+Firebase Cloud Firestore for real-time data storage and a
+lightweight FastAPI backend for application serving and API
+functionality.
 
-# ✦ Core Features
+The goal is simple: provide a practical application that is easy to use,
+visually refined, and structured like a real-world web project.
 
-## Expense Management
+🚀 Live Demo
+Experience the deployed application directly in your browser.
 
-- Add new expenses
-- Edit existing expenses
-- Delete expenses
-- Select expense categories
-- Store expense dates
-- Store expense amounts
-- Real-time Firestore synchronization
+::: {align="center"}
+<a href="YOUR_LIVE_DEMO_URL" target="_blank">{=html}
+<img src="https://img.shields.io/badge/OPEN%20LIVE%20APPLICATION-5A4032?style=for-the-badge&logo=vercel&logoColor=white" alt="Open Live Application"/>{=html}
+</a>{=html}
 
-## Dashboard Analytics
+<br>{=html}<br>{=html}
 
-The dashboard automatically calculates:
+The Live Demo opens the complete deployed application --- not just a
+documentation page.
+:::
 
-| Metric | Description |
-|---|---|
-| Total Expenses | Total number of recorded expenses |
-| Total Amount Spent | Combined amount of all expenses |
-| Current Month | Spending recorded during the current month |
-| Average Daily Spend | Average spending based on recorded dates |
+Try These Features
+➕ Add an expense
 
-## Search & Filtering
+✏️ Edit an expense
 
-- Search expenses by title
-- Filter by category
-- Dynamic result count
-- Instant UI updates
-- Easy expense discovery
+🗑️ Delete an expense
 
----
+🔎 Search expenses
 
-# ✦ Expense Categories
+🏷️ Filter by category
 
-The application supports the following categories:
+📊 View total expenses
 
-| Category | Example |
-|---|---|
-| 🍽️ **Food** | Lunch, Dinner, Groceries |
-| 🚗 **Travel** | Transport, Fuel, Ride |
-| 🛍️ **Shopping** | Clothes, Accessories |
-| 📄 **Bills** | Internet, Electricity |
-| 📦 **Other** | Miscellaneous expenses |
+💰 View total amount spent
 
----
+📅 View current-month spending
 
-# ✦ UI / UX Design
+📈 View average daily spending
 
-The application follows a **premium finance-dashboard aesthetic** rather than a generic template.
+🔥 Monitor Firebase connection status
 
-### Design Language
+Note: Replace YOUR_LIVE_DEMO_URL with the final deployed
+application URL before publishing the README.
 
-- Warm cream / ivory background
-- Deep cocoa and dark-brown navigation
-- Mocha accent elements
-- Soft card surfaces
-- Rounded modern components
-- Clean typography
-- Responsive layouts
-- Smooth interactions
-- Minimal visual clutter
-- Mobile-friendly interface
+✨ Key Features
+Feature Description
 
-### Visual Direction
+Expense Management Add, edit, and delete expense
+records
 
-`
-Premium Finance Dashboard
-          +
-Modern SaaS Interface
-          +
-Warm Editorial Design
-          =
-Personal Expense Tracker
+Cloud Storage Store records in Firebase Cloud
+Firestore
 
+Real-Time Updates Synchronize the dashboard with
+Firestore
 
-### Typography
+Search Find expenses by title
 
-The interface uses:
+Category Filter Filter records by expense category
 
-- **DM Sans** — interface and body text
-- **Playfair Display** — elegant display headings
+Dashboard Analytics Automatically calculate key
+spending metrics
 
----
+Responsive UI Works across desktop, tablet, and
+mobile layouts
 
-# ✦ Technology Stack
+Firebase Status Shows the current database
+connection state
 
-### Frontend
+📊 Dashboard Analytics
+The dashboard automatically calculates important spending information.
 
-- HTML5
-- CSS3
-- JavaScript ES Modules
+Metric Purpose
 
-### Backend
+Total Expenses Number of recorded expense entries
+Total Amount Spent Combined value of all recorded expenses
+Current Month Spending recorded during the current month
+Average Daily Spend Average spending based on recorded dates
 
-- Python
-- FastAPI
-- Uvicorn
-- Pydantic
+These values update automatically as expense records are added, edited,
+or deleted.
 
-### Database
+🏷️ Expense Categories
+The application currently supports five categories:
 
-- Firebase Cloud Firestore
+Category Typical Examples
 
-### Deployment
+🍽️ Food Meals, groceries, snacks
+🚗 Travel Transport, fuel, rides
+🛍️ Shopping Clothes, accessories, personal purchases
+📄 Bills Internet, electricity, subscriptions
+📦 Other Miscellaneous expenses
 
-- Vercel
-- FastAPI-compatible hosting
+🎨 UI / UX
+The interface follows a premium finance-dashboard aesthetic rather
+than a generic template.
 
-### Development
+Design Direction
+Warm cream and ivory surfaces
 
-- Visual Studio Code
-- Git
-- GitHub
-- Firebase Console
+Deep cocoa / dark-brown navigation
 
----
+Mocha accent elements
 
-# ✦ Application Architecture
+Clean card-based layout
 
-`
+Subtle borders and shadows
+
+Modern typography
+
+Clear visual hierarchy
+
+Responsive spacing
+
+Smooth interactions
+
+Mobile-friendly structure
+
+Design Philosophy
+Premium Finance UI
+        +
+Modern SaaS Dashboard
+        +
+Clean Editorial Styling
+        ↓
+Professional Expense Tracker
+The interface is designed to keep the most important information ---
+spending totals, recent expenses, and actions --- easy to find without
+overwhelming the user.
+
+🧰 Technology Stack
+Frontend
+HTML5 --- application structure
+
+CSS3 --- responsive styling and UI system
+
+JavaScript ES Modules --- application logic and interactions
+
+Backend
+Python
+
+FastAPI
+
+Uvicorn
+
+Pydantic
+
+Database
+Firebase Cloud Firestore
+
+Deployment & Development
+Vercel
+
+Git
+
+GitHub
+
+Firebase Console
+
+Visual Studio Code
+
+🏗️ Application Architecture
                          USER
-                          │
-                          ▼
-                ┌───────────────────┐
-                │    index.html     │
-                │   Application UI  │
-                └─────────┬─────────┘
-                          │
-                          ▼
-                ┌───────────────────┐
-                │      app.js       │
-                │ UI + CRUD + Stats │
-                └─────────┬─────────┘
-                          │
-                          ▼
-                ┌───────────────────┐
-                │ Firebase Firestore│
-                │   Real-Time Data  │
-                └───────────────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │    index.html   │
+                  │   Dashboard UI  │
+                  └────────┬────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │      app.js     │
+                  │ UI + CRUD +     │
+                  │ Search + Stats  │
+                  └────────┬────────┘
+                           │
+                           ▼
+                ┌─────────────────────┐
+                │ Firebase Firestore  │
+                │   Real-Time Data    │
+                └─────────────────────┘
+
 
                   FastAPI Backend
-                         │
-                         ▼
-                ┌───────────────────┐
-                │     main.py       │
-                │ API + App Serving │
-                └───────────────────┘
+                           │
+                           ▼
+                  ┌─────────────────┐
+                  │    main.py      │
+                  │ App + API Layer │
+                  └─────────────────┘
+Data Flow
+User Action
+    ↓
+Frontend UI
+    ↓
+JavaScript Logic
+    ↓
+Firebase Firestore
+    ↓
+Real-Time Listener
+    ↓
+Updated Dashboard
+🔥 Firebase Firestore
+Expense records are stored in a Firestore collection named:
 
----
-
-# ✦ Firebase Firestore
-
-The application uses **Firebase Cloud Firestore** as its database.
-
-### Collection
-
-```text
 expenses
-```
+Each expense document contains fields such as:
 
-### Expense Document Structure
-
-```text
 title
 amount
 category
 date
 createdAt
 updatedAt
-```
-
-Example:
-
-```json
+Example Document
 {
   "title": "Lunch",
   "amount": 850,
@@ -265,71 +261,33 @@ Example:
   "createdAt": "serverTimestamp",
   "updatedAt": "serverTimestamp"
 }
-```
+Firestore provides real-time synchronization so the interface can
+immediately reflect database changes.
 
-Firestore provides real-time synchronization between the database and application interface.
+⚡ FastAPI Backend
+The backend is located at:
 
----
-
-# ✦ FastAPI Backend
-
-The project includes a lightweight FastAPI backend located inside:
-
-```text
 backend/main.py
-```
+It provides a lightweight API layer and serves as the backend foundation
+for the project.
 
-### Backend Responsibilities
+Available Endpoints
+Endpoint Purpose
 
-- Serve the application
-- Provide API information
-- Provide health monitoring
-- Provide a foundation for future backend functionality
+GET / Serves the application
+GET /api Returns API information
+GET /api/health Checks backend health
+GET /docs Opens FastAPI interactive documentation
 
-### API Endpoints
-
-#### Application
-
-```http
-GET /
-```
-
-#### API Information
-
-```http
-GET /api
-```
-
-#### Health Check
-
-```http
-GET /api/health
-```
-
-Example response:
-
-```json
+Health Response
 {
   "status": "healthy",
   "message": "Personal Expense Tracker API is running"
 }
-```
+FastAPI automatically generates interactive API documentation through:
 
-### Interactive API Documentation
-
-FastAPI automatically provides:
-
-```text
 /docs
-```
-
-for interactive API documentation.
-
----
-
-# ✦ Project Structure
-
-```text
+📁 Project Structure
 personal-expense-tracker/
 │
 ├── backend/
@@ -345,68 +303,44 @@ personal-expense-tracker/
 ├── vercel.json
 ├── .gitignore
 └── README.md
-```
+File Guide
+File Responsibility
 
-### File Responsibilities
+index.html Main application structure and
+dashboard markup
 
-| File | Purpose |
-|---|---|
-| `index.html` | Main application structure |
-| `style.css` | Complete UI/UX styling |
-| `app.js` | Firebase CRUD, statistics and interactions |
-| `firebase-config.js` | Firebase Web App configuration |
-| `firestore.rules` | Firestore database rules |
-| `backend/main.py` | FastAPI application |
-| `backend/requirement.txt` | Python dependencies |
-| `vercel.json` | Deployment configuration |
-| `.gitignore` | Prevents unwanted/sensitive files |
-| `README.md` | Project documentation |
+style.css Complete visual design and
+responsive layout
 
----
+app.js Firebase CRUD, search, filters,
+statistics, and UI interactions
 
-# ✦ Getting Started
+firebase-config.js Firebase Web App configuration
 
-## 1. Clone the Repository
+firestore.rules Firestore access rules
 
-```bash
+backend/main.py FastAPI application and API routes
+
+backend/requirement.txt Python backend dependencies
+
+vercel.json Deployment configuration
+
+.gitignore Excludes unwanted and sensitive
+files
+
+README.md Project documentation
+🛠️ Getting Started
+1. Clone the Repository
 git clone https://github.com/haniaeman2026-pixel/Personal-Expense-Tracker.git
-```
-
-Then:
-
-```bash
 cd Personal-Expense-Tracker
-```
+2. Configure Firebase
+Create a Firebase project and enable Cloud Firestore.
 
----
+Then create a Firebase Web App and place its configuration inside:
 
-# ✦ Firebase Setup
-
-Create a Firebase project and enable Firestore.
-
-### Setup Flow
-
-```text
-Firebase Console
-       ↓
-Create Project
-       ↓
-Create Web App
-       ↓
-Create Firestore Database
-       ↓
-Configure Firestore Rules
-```
-
-Add your Firebase Web App configuration to:
-
-```text
 firebase-config.js
-```
-
 Example:
 
-```javascript
 export const firebaseConfig = {
   apiKey: "YOUR_API_KEY",
   authDomain: "YOUR_PROJECT.firebaseapp.com",
@@ -415,265 +349,174 @@ export const firebaseConfig = {
   messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
   appId: "YOUR_APP_ID"
 };
-```
+Keep private service-account credentials, passwords, and secret API
+keys out of the repository.
 
-> Never commit private service-account credentials, `.env` files, passwords, or secret credentials to GitHub.
+3. Run the Frontend
+From the project root:
 
----
-
-# ✦ Run Frontend Locally
-
-Because the project uses JavaScript ES Modules, run it through a local web server.
-
-### Using Python
-
-```powershell
 python -m http.server 5500
-```
+Then open:
 
-Open:
-
-```text
 http://localhost:5500
-```
+You can also use the Live Server extension in Visual Studio Code.
 
-### Using VS Code
+4. Run the FastAPI Backend
+Move into the backend directory:
 
-The application can also be launched through the **Live Server** extension in Visual Studio Code.
-
----
-
-# ✦ Run FastAPI Backend
-
-Open PowerShell inside the backend directory:
-
-```powershell
 cd backend
-```
-
 Install dependencies:
 
-```powershell
 python -m pip install -r requirement.txt
-```
+Start FastAPI:
 
-Start the server:
-
-```powershell
 python -m uvicorn main:app --reload
-```
-
 Backend:
 
-```text
 http://127.0.0.1:8000
-```
+API documentation:
 
-Interactive API documentation:
-
-```text
 http://127.0.0.1:8000/docs
-```
-
 Health check:
 
-```text
 http://127.0.0.1:8000/api/health
-```
+☁️ Deployment
+The application is deployment-ready for Vercel.
 
----
-
-# ✦ Deployment
-
-## Frontend Deployment
-
-The frontend can be deployed using Vercel.
-
-Install Vercel CLI:
-
-```powershell
+Install Vercel CLI
 npm install -g vercel
-```
-
-Login:
-
-```powershell
+Login
 vercel login
-```
-
-Deploy:
-
-```powershell
+Deploy
 vercel
-```
-
-Production deployment:
-
-```powershell
+Production Deployment
 vercel --prod
-```
+After deployment, use the generated application URL as the project's
+Live Demo URL in this README.
 
-After deployment, use the generated URL as the project's **Live Demo URL**.
+🔐 Security Considerations
+The repository is configured to avoid committing sensitive local files.
 
----
-
-# ✦ Security
-
-Security is an important part of the project.
-
-The repository intentionally excludes sensitive files such as:
-
+Examples excluded through .gitignore include:
 
 .env
 backend/.env
 __pycache__/
 *.pyc
-```
+Firebase Rules
+The included Firestore rules are suitable for an assignment/demo
+environment.
 
-through `.gitignore`.
+For a production application, the recommended architecture would
+include:
 
-### Firebase Security
+Firebase Authentication
 
-The included Firestore configuration is designed for an assignment/demo environment.
+User-specific expense records
 
-For a production application, implement:
+Authenticated Firestore rules
 
-- Firebase Authentication
-- User-specific expense documents
-- Authenticated Firestore rules
-- Proper access control
-- Secure environment configuration
+Least-privilege access control
 
-Avoid unrestricted production rules such as:
+Secure environment configuration
 
-```text
-allow read, write: if true;
-```
+Validation on both client and server
 
----
+Never commit real passwords, service-account JSON files, private keys,
+or secret API credentials to GitHub.
 
-# ✦ Git Workflow
+🔄 Git Workflow
+After modifying the project:
 
-After making project changes:
-
-```powershell
 git add .
-```
+Create a commit:
 
-Commit:
-
-```powershell
 git commit -m "Update project"
-```
+Push changes:
 
-Push:
-
-```powershell
 git push origin main
-```
+For a complete project update, git add . stages all changed files in
+the repository.
 
-Before pushing, always make sure sensitive files are excluded.
+🌱 Future Enhancements
+The current architecture provides a foundation for additional
+functionality such as:
 
----
+🔐 Firebase Authentication
 
-# ✦ Project Highlights
+👤 User-specific expense accounts
 
+📊 Interactive spending charts
 
-✓ Modern responsive dashboard
-✓ Premium finance-inspired UI
-✓ Firebase Firestore integration
-✓ Real-time database synchronization
-✓ Add / Edit / Delete functionality
-✓ Search functionality
-✓ Category filtering
-✓ Automatic expense calculations
-✓ Monthly spending analysis
-✓ Average daily spending
-✓ Firebase connection indicator
-✓ FastAPI backend
-✓ API health endpoint
-✓ Responsive mobile design
-✓ GitHub repository
-✓ Deployment ready
-✓ Live Demo
-```
+📅 Advanced date-range filtering
 
----
+📈 Monthly and yearly reports
 
-# ✦ Future Enhancements
+💰 Budget planning
 
-Potential future improvements include:
+🔔 Spending alerts
 
-- 🔐 Firebase Authentication
-- 👤 User-specific expense accounts
-- 📊 Interactive spending charts
-- 📅 Advanced date-range filtering
-- 📈 Monthly and yearly reports
-- 💰 Budget management
-- 🔔 Spending alerts
-- 📥 CSV / Excel export
-- 🌙 Enhanced dark mode
-- 📱 Progressive Web App support
-- 🤖 AI-powered spending insights
-- 🧾 Receipt upload and expense extraction
+📥 CSV / Excel export
 
----
+🌙 Enhanced dark mode
 
-# ✦ Development Philosophy
+📱 Progressive Web App support
 
-The project was built around the idea of combining a clean user experience with real application functionality.
+🤖 AI-assisted spending insights
 
+🧾 Receipt upload and expense extraction
 
-Clean UI
-   +
+💡 Development Approach
+The project was designed around a simple principle:
+
+Clean Interface
+      +
 Real Database
-   +
+      +
 CRUD Operations
-   +
-Real-Time Updates
-   +
-Backend Structure
-   +
+      +
+Real-Time Synchronization
+      +
+Backend Foundation
+      +
 Deployment
-   =
+      ↓
 Complete Web Application
-```
+Instead of being only a static frontend, the application demonstrates
+how a user-facing dashboard can connect to a cloud database, manage
+persistent records, calculate meaningful statistics, and provide a
+structured backend foundation.
 
-Rather than functioning as a static interface, the application connects the frontend with a real cloud database and provides a structured backend foundation for future development.
+👩‍💻 Author
+::: {align="center"}
 
----
+Hania Eman
+AI & Data Science Student · ML Developer · Python Enthusiast
 
-# ✦ Author
+Currently building practical projects across:
 
-<div align="center">
+Artificial Intelligence · Data Science · Machine Learning · Python ·
+Web Development
 
-<img src="https://readme-typing-svg.demolab.com?font=DM+Sans&weight=600&size=22&duration=3000&pause=900&color=7A5C45&center=true&vCenter=true&width=600&height=50&lines=Developed+by+Hania+Eman;AI+%26+Data+Science+Student;Python+%7C+Machine+Learning+%7C+AI" alt="Developed by Hania Eman"/>
+<br>{=html}
 
-<br>
+<a href="https://github.com/haniaeman2026-pixel" target="_blank">{=html}
+<img src="https://img.shields.io/badge/GitHub-haniaeman2026--pixel-5A4032?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>{=html}
+</a>{=html}
+:::
 
-**Hania Eman**
+::: {align="center"}
+<br>{=html}
 
-AI & Data Science Student • ML Developer • Python Enthusiast
+✦ Personal Expense Tracker ✦
+Track smarter. Spend consciously. Stay organized.
 
-Exploring and building practical projects in  
-**Artificial Intelligence, Data Science, Machine Learning and Software Development.**
+<br>{=html}
 
-</div>
+<a href="YOUR_LIVE_DEMO_URL" target="_blank">{=html}
+<img src="https://img.shields.io/badge/🚀%20TRY%20THE%20LIVE%20APP-5A4032?style=for-the-badge" alt="Try Live App"/>{=html}
+</a>{=html}
 
----
+<br>{=html}<br>{=html}
 
-<div align="center">
-
-## Personal Expense Tracker
-
-**Track smarter. Spend consciously. Build better habits.**
-
-<a href="YOUR_LIVE_DEMO_URL" target="_blank">
-  <img src="https://img.shields.io/badge/🚀%20TRY%20THE%20LIVE%20APP-5A4032?style=for-the-badge" alt="Try Live App"/>
-</a>
-
-<br><br>
-
-Made with ♡ by **Hania Eman**
-
-</div>
+Developed by Hania Eman
