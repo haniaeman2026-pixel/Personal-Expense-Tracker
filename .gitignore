@@ -1,0 +1,19 @@
+# Vercel
+.vercel/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Firebase CLI local cache
+.firebase/
+
+@"
+.env
+__pycache__/
+*.pyc
+"@ | Add-Content ..\.gitignore

@@ -1,0 +1,13 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /expenses/{expenseId} {
+      // DEMO/ASSIGNMENT RULES:
+      // This makes the assignment app usable without authentication.
+      // For a real production app, add Firebase Authentication and
+      // restrict reads/writes to authenticated users.
+      allow read, write: if true;
+    }
+  }
+}

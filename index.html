@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="Personal Expense Tracker with Firebase Firestore"
+  />
+
+  <title>Personal Expense Tracker</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="app-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <div class="brand">
+        <div class="brand-mark">▣</div>
+        <span>Expense Tracker</span>
+      </div>
+
+      <nav class="side-nav">
+
+        <a class="nav-item active" href="#dashboard">
+          <span class="nav-icon">⌂</span>
+          Dashboard
+        </a>
+
+        <a class="nav-item" href="#add-expense">
+          <span class="nav-icon">＋</span>
+          Add Expense
+        </a>
+
+        <a class="nav-item" href="#expenses">
+          <span class="nav-icon">▤</span>
+          All Expenses
+        </a>
+
+        <a class="nav-item" href="#settings">
+          <span class="nav-icon">⚙</span>
+          Settings
+        </a>
+
+      </nav>
+
+      <div class="sidebar-note">
+        <div class="leaf-line">⌁</div>
+
+        <p>
+          Better<br>
+          Money habits<br>
+          Brighter Future ♡
+        </p>
+      </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main-content" id="dashboard">
+
+      <!-- HEADER -->
+      <header class="topbar">
+
+        <div>
+
+          <p class="welcome">
+            WELCOME BACK
+          </p>
+
+          <h1>
+            Personal Expense Tracker
+          </h1>
+
+          <p class="subtitle">
+            Track your spending, manage your money, achieve your goals.
+          </p>
+
+        </div>
+
+
+        <div class="topbar-right">
+
+          <div
+            class="status-pill"
+            id="connectionStatus"
+          >
+            Connecting...
+          </div>
+
+          <button
+            class="profile-btn"
+            type="button"
+            aria-label="Profile"
+          >
+            ♙
+          </button>
+
+        </div>
+
+      </header>
+
+
+      <!-- STAT CARDS -->
+      <section
+        class="stats-grid"
+        aria-label="Expense summary"
+      >
+
+        <article class="stat-card">
+
+          <div class="stat-icon wallet">
+            ▣
+          </div>
+
+          <div class="stat-content">
+
+            <span class="stat-label">
+              Total Expenses
+            </span>
+
+            <strong id="totalExpenses">
+              0
+            </strong>
+
+            <small id="expenseTrend">
+              +0 this month ↑
+            </small>
+
+          </div>
+
+        </article>
+
+
+        <article class="stat-card">
+
+          <div class="stat-icon coins">
+            ◉
+          </div>
+
+          <div class="stat-content">
+
+            <span class="stat-label">
+              Total Amount Spent
+            </span>
+
+            <strong id="totalAmount">
+              Rs 0
+            </strong>
+
+            <small id="amountTrend">
+              +Rs 0 this month ↑
+            </small>
+
+          </div>
+
+        </article>
+
+
+        <article class="stat-card">
+
+          <div class="stat-icon calendar">
+            □
+          </div>
+
+          <div class="stat-content">
+
+            <span class="stat-label">
+              Current Month
+            </span>
+
+            <strong id="monthAmount">
+              Rs 0
+            </strong>
+
+            <small id="monthTrend">
+              +Rs 0 this month ↑
+            </small>
+
+          </div>
+
+        </article>
+
+
+        <article class="stat-card">
+
+          <div class="stat-icon target">
+            ◎
+          </div>
+
+          <div class="stat-content">
+
+            <span class="stat-label">
+              Avg. Daily Spend
+            </span>
+
+            <strong id="avgDailyAmount">
+              Rs 0
+            </strong>
+
+            <small id="avgDailyText">
+              Based on 0 expenses
+            </small>
+
+          </div>
+
+        </article>
+
+      </section>
+
+
+      <!-- ADD EXPENSE -->
+      <section
+        class="panel add-panel"
+        id="add-expense"
+      >
+
+        <div class="section-title-row">
+
+          <div class="section-icon">
+            ＋
+          </div>
+
+          <div>
+
+            <h2 id="formHeading">
+              Add New Expense
+            </h2>
+
+            <p>
+              Keep track of your daily spending
+            </p>
+
+          </div>
+
+          <button
+            type="button"
+            class="ghost-btn hidden"
+            id="cancelEditBtn"
+          >
+            Cancel edit
+          </button>
+
+        </div>
+
+
+        <form
+          id="expenseForm"
+          class="expense-form"
+        >
+
+          <!-- TITLE -->
+          <div class="field">
+
+            <label for="title">
+              Expense Title
+            </label>
+
+            <div class="input-wrap">
+
+              <span class="input-icon">
+                ▧
+              </span>
+
+              <input
+                id="title"
+                name="title"
+                type="text"
+                placeholder="e.g. Lunch"
+                maxlength="80"
+                required
+              />
+
+            </div>
+
+          </div>
+
+
+          <!-- AMOUNT -->
+          <div class="field">
+
+            <label for="amount">
+              Amount (PKR)
+            </label>
+
+            <div class="input-wrap">
+
+              <span class="input-icon">
+                ₹
+              </span>
+
+              <input
+                id="amount"
+                name="amount"
+                type="number"
+                min="0.01"
+                step="0.01"
+                placeholder="e.g. 500"
+                required
+              />
+
+            </div>
+
+          </div>
+
+
+          <!-- CATEGORY -->
+          <div class="field">
+
+            <label for="category">
+              Category
+            </label>
+
+            <div class="input-wrap">
+
+              <span class="input-icon">
+                ◇
+              </span>
+
+              <select
+                id="category"
+                name="category"
+                required
+              >
+
+                <option value="">
+                  Select category
+                </option>
+
+                <option value="Food">
+                  Food
+                </option>
+
+                <option value="Travel">
+                  Travel
+                </option>
+
+                <option value="Shopping">
+                  Shopping
+                </option>
+
+                <option value="Bills">
+                  Bills
+                </option>
+
+                <option value="Other">
+                  Other
+                </option>
+
+              </select>
+
+              <span class="select-arrow">
+                ⌄
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <!-- DATE -->
+          <div class="field">
+
+            <label for="date">
+              Date
+            </label>
+
+            <div class="input-wrap">
+
+              <span class="input-icon">
+                □
+              </span>
+
+              <input
+                id="date"
+                name="date"
+                type="date"
+                required
+              />
+
+            </div>
+
+          </div>
+
+
+          <!-- BUTTON -->
+          <button
+            class="primary-btn"
+            id="submitBtn"
+            type="submit"
+          >
+
+            <span>
+              ＋
+            </span>
+
+            Add Expense
+
+          </button>
+
+        </form>
+
+
+        <p
+          class="message"
+          id="message"
+          role="status"
+        ></p>
+
+      </section>
+
+
+      <!-- EXPENSE HISTORY -->
+      <section
+        class="panel history-panel"
+        id="expenses"
+      >
+
+        <div class="history-header">
+
+          <div class="section-title-row compact">
+
+            <div class="section-icon">
+              ☷
+            </div>
+
+            <div>
+
+              <h2>
+                Expense History
+              </h2>
+
+              <p>
+                Your recent expenses
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="history-tools">
+
+            <!-- SEARCH -->
+            <div class="search-wrap">
+
+              <span>
+                ⌕
+              </span>
+
+              <input
+                class="search-input"
+                id="searchInput"
+                type="search"
+                placeholder="Search expenses..."
+              />
+
+            </div>
+
+
+            <!-- FILTER -->
+            <div class="filter-wrap">
+
+              <span>
+                ▽
+              </span>
+
+              <select id="categoryFilter">
+
+                <option value="">
+                  All Categories
+                </option>
+
+                <option value="Food">
+                  Food
+                </option>
+
+                <option value="Travel">
+                  Travel
+                </option>
+
+                <option value="Shopping">
+                  Shopping
+                </option>
+
+                <option value="Bills">
+                  Bills
+                </option>
+
+                <option value="Other">
+                  Other
+                </option>
+
+              </select>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- TABLE -->
+        <div class="table-wrap">
+
+          <table>
+
+            <thead>
+
+              <tr>
+
+                <th>#</th>
+
+                <th>
+                  Title
+                </th>
+
+                <th>
+                  Amount
+                </th>
+
+                <th>
+                  Category
+                </th>
+
+                <th>
+                  Date
+                </th>
+
+                <th>
+                  Actions
+                </th>
+
+              </tr>
+
+            </thead>
+
+
+            <tbody id="expenseTableBody">
+
+              <tr>
+
+                <td
+                  colspan="6"
+                  class="empty-state"
+                >
+                  Loading expenses...
+                </td>
+
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+
+        <div class="table-footer">
+
+          <span id="resultCount">
+            Showing 0 of 0 expenses
+          </span>
+
+          <div class="pagination">
+
+            <button type="button">
+              ‹
+            </button>
+
+            <button
+              type="button"
+              class="page-active"
+            >
+              1
+            </button>
+
+            <button type="button">
+              ›
+            </button>
+
+          </div>
+
+        </div>
+
+      </section>
+      <!-- SETTINGS -->
+<section
+  class="panel settings-panel"
+  id="settings"
+>
+
+  <div class="section-title-row">
+
+    <div class="section-icon">
+      ⚙
+    </div>
+
+    <div>
+      <h2>Settings</h2>
+      <p>Manage your expense tracker preferences</p>
+    </div>
+
+  </div>
+
+
+  <div class="settings-grid">
+
+    <!-- APP PREFERENCES -->
+    <div class="settings-card">
+
+      <div class="settings-card-icon">
+        ◉
+      </div>
+
+      <div class="settings-card-content">
+
+        <h3>App Preferences</h3>
+
+        <p>
+          Customize how your expense tracker looks and behaves.
+        </p>
+
+
+        <div class="setting-row">
+
+          <div>
+            <strong>Currency</strong>
+            <span>Currency used for expenses</span>
+          </div>
+
+          <span class="setting-value">
+            PKR (Rs)
+          </span>
+
+        </div>
+
+
+        <div class="setting-row">
+
+          <div>
+            <strong>Dark Mode</strong>
+            <span>Switch between light and dark appearance</span>
+          </div>
+
+          <label class="switch">
+
+            <input
+              type="checkbox"
+              id="darkModeToggle"
+            />
+
+            <span class="slider"></span>
+
+          </label>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- FIREBASE -->
+    <div class="settings-card">
+
+      <div class="settings-card-icon">
+        🔥
+      </div>
+
+      <div class="settings-card-content">
+
+        <h3>Firebase Connection</h3>
+
+        <p>
+          Your expenses are stored securely in Firebase Firestore.
+        </p>
+
+
+        <div class="connection-box">
+
+          <span class="connection-dot"></span>
+
+          <div>
+
+            <strong id="settingsFirebaseStatus">
+              Checking connection...
+            </strong>
+
+            <span>
+              Real-time Firestore database
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- ABOUT -->
+    <div class="settings-card">
+
+      <div class="settings-card-icon">
+        ℹ
+      </div>
+
+      <div class="settings-card-content">
+
+        <h3>About Application</h3>
+
+        <p>
+          Personal Expense Tracker helps you record,
+          organize and monitor your daily spending.
+        </p>
+
+
+        <div class="about-list">
+
+          <div>
+            <span>Application</span>
+            <strong>Personal Expense Tracker</strong>
+          </div>
+
+          <div>
+            <span>Version</span>
+            <strong>1.0.0</strong>
+          </div>
+
+          <div>
+            <span>Database</span>
+            <strong>Firebase Firestore</strong>
+          </div>
+
+          <div>
+            <span>Backend</span>
+            <strong>FastAPI</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+      <!-- FOOTER -->
+      <footer>
+
+        Personal Expense Tracker
+
+        <span>•</span>
+
+        Built with ♡
+
+        <span>•</span>
+
+        Firebase Firestore
+
+      </footer>
+
+    </main>
+
+  </div>
+
+
+  <script
+    type="module"
+    src="app.js"
+  ></script>
+
+</body>
+</html>
